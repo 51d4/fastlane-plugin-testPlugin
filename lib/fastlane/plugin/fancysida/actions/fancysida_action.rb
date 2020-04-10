@@ -13,7 +13,7 @@ module Fastlane
           end
         }
 
-        UI.message("The fancysida plugin is working!")
+        UI.message("スゴイイイイイ!")
       end
 
       def self.description
