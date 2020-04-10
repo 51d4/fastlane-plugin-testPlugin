@@ -5,6 +5,14 @@ module Fastlane
   module Actions
     class FancysidaAction < Action
       def self.run(params)
+        require "open-uri"
+
+        open("https://66.media.tumblr.com/857b30022420846685a957c77cf9a03c/tumblr_ms9z9hrsBw1rc7ciao1_1280.gif") {|f|
+          File.open("sugoii.gif","wb") do |file|
+            file.puts f.read
+          end
+        }
+
         UI.message("The fancysida plugin is working!")
       end
 
